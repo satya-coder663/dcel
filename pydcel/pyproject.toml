@@ -1,0 +1,38 @@
+[tool.coverage.run]
+branch = true
+source = [ "dcel" ]
+
+[tool.coverage.report]
+exclude_lines = ['if TYPE_CHECKING:']
+show_missing = true
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report html:'../coverage/dcel/html' --cov-report xml:'../coverage/dcel/coverage.xml' --html='../reports/dcel/unittests/html/index.html' --junitxml='../reports/dcel/unittests/junit.xml'"
+
+[tool.poetry]
+name = "pydcel"
+version = "1.0.0"
+description = "A Python implementation of the Doubly-Connected Edge List (DCEL) data structure."
+authors = [ 
+  "Hamdaan Ali"
+]
+license = 'BSD 3-Clause License'
+readme = 'README.md'
+
+  [[tool.poetry.packages]]
+  include = "dcel"
+
+  [tool.poetry.dependencies]
+  python = ">=3.9,<3.12"
+
+  [tool.poetry.group.dev.dependencies]
+  autopep8 = "2.0.2"
+  flake8 = "6.0.0"
+  pytest = "7.3.1"
+  pytest-sugar = "0.9.7"
+  pytest-cov = "4.1.0"
+  pytest-html = "3.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

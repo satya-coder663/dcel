@@ -1,0 +1,13 @@
+
+.nx/installation
+.nx/cache
+.nx/workspace-data
+
+env
+.vscode
+.nx
+node_modules
+
+dist
+
+.pypirc
