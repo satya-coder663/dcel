@@ -11,3 +11,5 @@ node_modules
 dist
 
 .pypirc
+
+__pycache__
