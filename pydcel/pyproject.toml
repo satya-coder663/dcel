@@ -11,7 +11,7 @@ addopts = ""
 
 [tool.poetry]
 name = "pydcel"
-version = "0.0.1"
+version = "0.0.2"
 description = "A Python implementation of the Doubly-Connected Edge List (DCEL) data structure."
 authors = [ 
   "Hamdaan Ali"

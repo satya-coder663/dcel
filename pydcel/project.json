@@ -64,8 +64,8 @@
     "publish": {
       "executor": "@nxlv/python:run-commands",
       "options": {
-        "command": "py -m twine upload  dist/*",
-        "cwd": "./pydcel"
+        "command": "py -m twine upload --config-file .\\.pypirc dist/*",
+        "cwd": "./"
       }
     }
   },

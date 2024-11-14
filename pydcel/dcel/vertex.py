@@ -1,6 +1,6 @@
 from typing import List, Tuple, Optional, Iterator
 
-from pydcel.dcel.point import Point
+from dcel.point import Point
 
 
 class Vertex:
