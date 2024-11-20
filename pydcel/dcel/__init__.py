@@ -2,3 +2,4 @@
 from dcel.vertex import Vertex
 from dcel.primitives import Face, HalfEdge
 from dcel.point import Point
+from dcel.dcel import Dcel
